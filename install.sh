@@ -74,6 +74,7 @@ install_suckless() {
 
 post_installation() {
   chsh -s $(which zsh)
+  sudo chmod +s /usr/bin/poweroff && sudo chmod +s /usr/bin/reboot
 }
 
 install_packages
